@@ -70,9 +70,9 @@ const fetchHeroes = async <T>(): Promise<T> => {
     },
   ];
 
-  const promise = new Promise<T>((resolve) => {
+  const promise = new Promise<T>((resolve) => { 
     setTimeout(() => {      
-      resolve(heroes as T);
+      resolve(heroes as T);           
     }, 1000);
   });
 
